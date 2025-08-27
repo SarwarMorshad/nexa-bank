@@ -11,5 +11,111 @@
     <script src="https://kit.fontawesome.com/364257c701.js" crossorigin="anonymous"></script>
     <title>Home</title>
   </head>
-  <body></body>
+  <body class="bg-[#f4f5f7] max-w-lg mx-auto">
+    <!-- ! Nav Bar -->
+    <nav class="flex justify-between items-center p-5 bg-white border-b-1 border-slate-300">
+      <div class="flex items-center">
+        <img src="assets/Group.png" alt="" class="h-[40px]" />
+        <div>
+          <h2 class="font-bold">$<span>45000</span></h2>
+          <p class="text-[#08080880]">Available Balance</p>
+        </div>
+      </div>
+      <div>
+        <button class="btn text-[#08080880]">
+          <span><i class="fa-solid fa-arrow-right-from-bracket fa-rotate-180"></i></span>Log Out
+        </button>
+      </div>
+    </nav>
+
+    <!-- ! Welcome Section -->
+    <div class="p-5 bg-white">
+      <h1 class="font-bold text-[20px] mb-2 mt-5">🔥 Welcome to Payooo!</h1>
+      <p class="text-[#08080880] text-[16px]">
+        Enjoy easy and convenient financial services with us. Cashout charge is low and
+      </p>
+    </div>
+
+    <!-- ! Grid Section -->
+    <div class="p-5 bg-white grid grid-cols-3 gap-2 rounded-b-2xl mb-10">
+      <div class="text-center min-h-[100px] border-2 border-[#0808081a] rounded-lg p-5">
+        <img src="assets/wallet1.png" alt="" class="mx-auto" />
+        <h2>Add Money</h2>
+      </div>
+      <div class="text-center min-h-[100px] border-2 border-[#0808081a] rounded-lg p-5">
+        <img src="assets/send1.png" alt="" class="mx-auto" />
+        <h2>Cashout</h2>
+      </div>
+      <div class="text-center min-h-[100px] border-2 border-[#0808081a] rounded-lg p-5">
+        <img src="assets/money1.png" alt="" class="mx-auto" />
+        <h2>Transfer Money</h2>
+      </div>
+      <div class="text-center min-h-[100px] border-2 border-[#0808081a] rounded-lg p-5">
+        <img src="assets/bonus1.png" alt="" class="mx-auto" />
+        <h2>Get Bonus</h2>
+      </div>
+      <div class="text-center min-h-[100px] border-2 border-[#0808081a] rounded-lg p-5">
+        <img src="assets/purse1.png" alt="" class="mx-auto" />
+        <h2>Pay Bill</h2>
+      </div>
+      <div class="text-center min-h-[100px] border-2 border-[#0808081a] rounded-lg p-5">
+        <img src="assets/transaction1.png" alt="" class="mx-auto" />
+        <h2>Transactions</h2>
+      </div>
+    </div>
+
+    <!-- ! All forms Section -->
+    <div class="all-form-sections bg-[#f4f5f7] p-5">
+      <!-- Add money -->
+      <div>
+        <h2 class="font-bold text-[20px] mb-2">Add Money</h2>
+        <form class="p-8 bg-white rounded-2xl">
+          <div class="flex flex-col gap-3">
+            <label for="bank" class="font-semibold">Select a Bank</label>
+            <select class="select bg-[#f4f5f7] mt-3 rounded-2xl w-full" id="bank" name="bank">
+              <option value="" disabled selected hidden>Pick a Bank</option>
+              <option value="crimson">Brac Bank</option>
+              <option value="amber">IFIC Bank</option>
+              <option value="velvet">Eastern Bank</option>
+            </select>
+          </div>
+
+          <div class="mt-6 mb-5">
+            <label class="font-semibold" for="amount">Bank Account Number</label>
+            <br />
+            <input
+              type="text"
+              placeholder="Enter 11 Digit Bank Account Number"
+              class="input bg-[#f4f5f7] mt-3 rounded-2xl w-full"
+              id="amount"
+            />
+          </div>
+
+          <div class="mt-6 mb-5">
+            <label class="font-semibold" for="amount">Amount to Add</label>
+            <br />
+            <input
+              type="text"
+              placeholder="Add Amount to Withdraw"
+              class="input bg-[#f4f5f7] mt-3 rounded-2xl w-full"
+              id="amount"
+            />
+          </div>
+
+          <div class="mt-6 mb-5">
+            <label class="font-semibold" for="amount">Pin Number</label>
+            <br />
+            <input
+              type="text"
+              placeholder="Enter 4 Digit Pin Number"
+              class="input bg-[#f4f5f7] mt-3 rounded-2xl w-full"
+              id="amount"
+            />
+          </div>
+          <button class="btn btn-primary w-full rounded-3xl text-white" id="btn-add-money">Add Money</button>
+        </form>
+      </div>
+    </div>
+    <script src="script/addmoney.js"></script>
+  </body>
 </html>

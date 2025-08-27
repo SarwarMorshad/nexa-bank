@@ -17,7 +17,7 @@
       <div class="flex items-center">
         <img src="assets/Group.png" alt="" class="h-[40px]" />
         <div>
-          <h2 class="font-bold">$<span>45000</span></h2>
+          <h2 class="font-bold">$<span id="main-account-balance">45000</span></h2>
           <p class="text-[#08080880]">Available Balance</p>
         </div>
       </div>
@@ -74,9 +74,9 @@
             <label for="bank" class="font-semibold">Select a Bank</label>
             <select class="select bg-[#f4f5f7] mt-3 rounded-2xl w-full" id="bank" name="bank">
               <option value="" disabled selected hidden>Pick a Bank</option>
-              <option value="crimson">Brac Bank</option>
-              <option value="amber">IFIC Bank</option>
-              <option value="velvet">Eastern Bank</option>
+              <option value="Brac Bank">Brac Bank</option>
+              <option value="IFIC Bank">IFIC Bank</option>
+              <option value="Eastern Bank">Eastern Bank</option>
             </select>
           </div>
 
@@ -87,7 +87,7 @@
               type="text"
               placeholder="Enter 11 Digit Bank Account Number"
               class="input bg-[#f4f5f7] mt-3 rounded-2xl w-full"
-              id="amount"
+              id="account-number"
             />
           </div>
 
@@ -98,7 +98,7 @@
               type="text"
               placeholder="Add Amount to Withdraw"
               class="input bg-[#f4f5f7] mt-3 rounded-2xl w-full"
-              id="amount"
+              id="add-amount"
             />
           </div>
 
@@ -109,7 +109,7 @@
               type="text"
               placeholder="Enter 4 Digit Pin Number"
               class="input bg-[#f4f5f7] mt-3 rounded-2xl w-full"
-              id="amount"
+              id="pin-number"
             />
           </div>
           <button class="btn btn-primary w-full rounded-3xl text-white" id="btn-add-money">Add Money</button>

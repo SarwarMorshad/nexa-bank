@@ -11,27 +11,34 @@
     <script src="https://kit.fontawesome.com/364257c701.js" crossorigin="anonymous"></script>
     <title>Nexa Bank</title>
   </head>
-  <body class="bg-[#f4f5f7] h-[100vh] flex justify-center items-center">
-    <form class="w-[400px] border-2 bg-white rounded-2xl border-none p-5">
+  <body class="bg-[#f4f5f7] h-[100vh] flex flex-col justify-center items-center">
+    <div class="w-[300px] h-[130px] bg-[url(./assets/bg.png)] bg-cover flex justify-center items-center">
+      <img src="/assets/Group.png" alt="" />
+    </div>
+    <form class="w-[400px] border-2 bg-white rounded-2xl border-none p-8">
       <div>
-        <label for="Mobile">Mobile Number</label>
+        <label class="font-semibold" for="Mobile">Mobile Number</label>
         <br />
         <input
           type="text"
           placeholder="Enter Your Mobile Number"
           class="input bg-[#f4f5f7] mt-3 rounded-2xl w-full"
+          id="mobile-number"
         />
       </div>
       <div class="mt-6 mb-5">
-        <label for="Mobile">4 Digit Pin</label>
+        <label class="font-semibold" for="Mobile">4 Digit Pin</label>
         <br />
         <input
           type="text"
           placeholder="Enter 4 Digit Pin"
           class="input bg-[#f4f5f7] mt-3 rounded-2xl w-full"
+          id="pin-number"
         />
       </div>
-      <button class="btn btn-primary w-full rounded-3xl">Primary</button>
+      <button class="btn btn-primary w-full rounded-3xl text-white" id="btn-login">Login</button>
     </form>
+    <!-- JS Script -->
+    <script src="script/script.js"></script>
   </body>
 </html>

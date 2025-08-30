@@ -180,7 +180,47 @@
           </button>
         </form>
       </div>
+
+      <!-- ?? Transfer Money -->
+      <div id="parent-transfer-money" class="hidden">
+        <h2 class="font-bold text-[20px] mb-2">Transfer Money</h2>
+        <form class="p-8 bg-white rounded-2xl">
+          <div class="mt-6 mb-5">
+            <label class="font-semibold" for="amount">User Account Number</label>
+            <br />
+            <input
+              type="text"
+              placeholder="Enter 11 Digit Number"
+              class="input bg-[#f4f5f7] mt-3 rounded-2xl w-full"
+              id="transfer-agent-number"
+            />
+          </div>
+
+          <div class="mt-6 mb-5">
+            <label class="font-semibold" for="amount">Amount</label>
+            <br />
+            <input
+              type="text"
+              placeholder="Enter Amount to Transfer"
+              class="input bg-[#f4f5f7] mt-3 rounded-2xl w-full"
+              id="transfer-amount"
+            />
+          </div>
+
+          <div class="mt-6 mb-5">
+            <label class="font-semibold" for="amount">Pin Number</label>
+            <br />
+            <input
+              type="text"
+              placeholder="Enter 4 Digit Pin Number"
+              class="input bg-[#f4f5f7] mt-3 rounded-2xl w-full"
+              id="transfer-pin-number"
+            />
+          </div>
+          <button class="btn btn-primary w-full rounded-3xl text-white" id="btn-send-money">Send Now</button>
+        </form>
+      </div>
     </div>
-    <script src="script/addmoney.js"></script>
+    <script src="script/main.js"></script>
   </body>
 </html>

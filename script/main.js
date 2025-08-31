@@ -94,16 +94,26 @@ document.getElementById("add-money").addEventListener("click", function () {
   document.getElementById("parent-add-money").classList.remove("hidden");
   document.getElementById("parent-cash-out").classList.add("hidden");
   document.getElementById("parent-transfer-money").classList.add("hidden");
+  document.getElementById("parent-get-bonus").classList.add("hidden");
 });
 
 document.getElementById("cash-out").addEventListener("click", function () {
   document.getElementById("parent-cash-out").classList.remove("hidden");
   document.getElementById("parent-add-money").classList.add("hidden");
   document.getElementById("parent-transfer-money").classList.add("hidden");
+  document.getElementById("parent-get-bonus").classList.add("hidden");
 });
 
 document.getElementById("transfer-money").addEventListener("click", function () {
   document.getElementById("parent-transfer-money").classList.remove("hidden");
   document.getElementById("parent-add-money").classList.add("hidden");
   document.getElementById("parent-cash-out").classList.add("hidden");
+  document.getElementById("parent-get-bonus").classList.add("hidden");
+});
+
+document.getElementById("get-bonus").addEventListener("click", function () {
+  document.getElementById("parent-get-bonus").classList.remove("hidden");
+  document.getElementById("parent-add-money").classList.add("hidden");
+  document.getElementById("parent-cash-out").classList.add("hidden");
+  document.getElementById("parent-transfer-money").classList.add("hidden");
 });
